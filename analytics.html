@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#10251f"><title>Аналитика — Verdant</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script defer src="assets/js/data.js"></script><script defer src="assets/js/storage.js"></script>
+<script defer src="assets/js/simulator.js"></script><script defer src="assets/js/automation.js"></script>
+<script defer src="assets/js/app.js"></script>
+</head>
+<body data-page="analytics">
+<div class="app-shell">
+<aside class="sidebar" id="sidebar">
+<a class="brand side-brand" href="index.html"><span class="brand-mark">✳</span><span>verdant<span class="brand-dot">.</span><small>SMART GREENHOUSE</small></span></a>
+<div class="side-label">РАБОЧЕЕ ПРОСТРАНСТВО</div>
+<nav class="side-nav">
+<a href="dashboard.html" data-nav="dashboard"><span class="nav-icon">◫</span>Обзор</a>
+<a href="zones.html" data-nav="zones"><span class="nav-icon">▦</span>Зоны <span class="nav-count">3</span></a>
+<a href="sensors.html" data-nav="sensors"><span class="nav-icon">⌁</span>Датчики</a>
+<a href="control.html" data-nav="control"><span class="nav-icon">⏻</span>Управление</a>
+<a href="alerts.html" data-nav="alerts"><span class="nav-icon">♧</span>События <span class="alert-count" id="nav-alert-count">2</span></a>
+<a href="analytics.html" data-nav="analytics"><span class="nav-icon">↗</span>Аналитика</a>
+</nav>
+<div class="side-label side-label-bottom">СИСТЕМА</div>
+<nav class="side-nav"><a href="settings.html" data-nav="settings"><span class="nav-icon">⚙</span>Настройки</a></nav>
+<div class="sidebar-bottom"><div class="system-status"><span class="live-dot"></span><div><b>Симулятор активен</b><small>Обновление каждые 5 сек.</small></div></div>
+<div class="profile-mini"><div class="profile-avatar">ТЭ</div><div><b>Темирлан Эшимбаев</b><small>Администратор проекта</small></div><span class="more">···</span></div></div>
+</aside>
+<div class="main-area">
+<header class="topbar"><button class="mobile-menu" id="mobile-menu" aria-label="Открыть меню">☰</button><div class="breadcrumb">Мои проекты <span>/</span> <b>IoT Smart Greenhouse</b></div>
+<div class="top-actions"><span class="top-live"><i class="live-dot"></i> Система онлайн</span><button class="icon-button" id="theme-toggle" title="Сменить тему">◐</button><a class="top-profile" href="settings.html"><span class="profile-avatar small-avatar">ТЭ</span></a></div></header>
+<main class="content">
+<div class="page-heading"><div><div class="eyebrow">GREENHOUSE MONITORING <span class="heading-date" id="today-date"></span></div><h1>Аналитика</h1><p>Динамика показаний и рекомендации системы.</p></div><div class="heading-actions"><span class="mode-badge" id="global-mode"><i></i> AUTO MODE</span><button class="btn btn-soft" id="export-btn">↓ Экспорт данных</button></div></div>
+<div id="page-content"></div>
+<footer class="app-footer"><span>✳ <b>verdant.</b> · Учебный прототип IoT</span><span>Автор: Темирлан Эшимбаев</span><span>Данные симулируются локально</span></footer>
+</main></div></div>
+<div class="toast" id="toast"></div>
+</body></html>
